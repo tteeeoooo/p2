@@ -1,0 +1,11 @@
+@model Store.Models.Category
+
+<h2>Editare Categorie</h2>
+<form method="post" action="/Categories/Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="CategoryName">Nume categorie</label>
+        <input type="text" asp-for="CategoryName" required />
+    </div>
+    <button type="submit">Salveaza</button>
+</form>

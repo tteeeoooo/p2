@@ -1,0 +1,8 @@
+@model Store.Models.Category
+
+<ul>
+    @foreach (var category in (ViewBag.AllCategories as IEnumerable<Store.Models.Category>) ?? Enumerable.Empty<Store.Models.Category>())
+    {
+        <li>@category.Id - @category.CategoryName</li>
+    }
+</ul>
